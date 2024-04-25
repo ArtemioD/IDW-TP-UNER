@@ -3,7 +3,7 @@
 <h3>2 npm start</h3>
 
 
-comandos
-git fetch origin <nombre de la rama> - para traer la rama al local
-git checkout <nombre de la rama> - para ir a la nueva rama
-git branch - para ver todas las ramas y en que estas.
+<h2>comandos</h2>
+<p>git fetch origin <nombre de la rama> - para traer la rama al local</p>
+<p>git checkout <nombre de la rama> - para ir a la nueva rama<p>
+<p>git branch - para ver todas las ramas y en que estas.<p>
