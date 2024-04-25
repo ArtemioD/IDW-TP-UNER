@@ -1,25 +1,20 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
 const path = require('path');
 
-const server = http.createServer((req, res) => {
-    // Ruta al archivo HTML
-    const filePath = path.join(__dirname, 'index.html');
+const app = express();
 
-    // Leer el archivo HTML
-    fs.readFile(filePath, (err, content) => {
-        if (err) {
-            res.writeHead(500);
-            res.end('Error al cargar la página.');
-        } else {
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(content, 'utf-8');
-        }
-    });
+// Configuración para servir archivos estáticos desde las carpetas "pages" y "styles"
+app.use(express.static(path.join(__dirname, 'public/pages')));
+app.use('/styles', express.static(path.join(__dirname, 'public/styles')));
+
+// Manejo de errores
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Error al cargar la página.');
 });
 
 const PORT = 3000;
 
-server.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log(`Servidor en ejecución en http://localhost:${PORT}/`);
 });
