@@ -12,6 +12,7 @@ body {
 
 .logo {
     margin-left: 5rem;
+    margin-right: 10rem;
     width: 45px;
     height: auto;
 }
@@ -20,7 +21,9 @@ body {
     display: flex;
     padding: 3px;
     width: 25rem;
+    flex: 1;
     align-items: center;
+    margin-right: 1rem;
     border-radius: 20px;
     border: 2px solid #3e3f41;
 }
@@ -48,18 +51,25 @@ body {
 
 .registro-container {
     margin-left: 1rem;
-    padding: 8px;
+    margin-right: 2rem;
+    padding: 4px 8px;
+    align-items:center;
     display: flex;
+    justify-content: center;
     border-radius: 20px;
     border: 2px solid #3e3f41;
     cursor: pointer;
 }
 
+.registro-container:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
 .registro-container img {
     padding-left: 5px;
     padding-right: 5px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 25px;
 }
 
 .menu-container {
@@ -71,6 +81,7 @@ body {
     display: inline-block;
     padding: 0px 20px;
     color: #575555;
+    margin-left: 1rem;
     text-decoration: none;
     line-height: 40px;
     border-radius: 20px;
@@ -80,4 +91,38 @@ body {
 .btn-menu:hover {
     background-color: #b0ebc6;
     color: white;
+}
+
+.container{
+    background-color:#F1EDED;
+    min-height: 80vh;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card{
+    height: 60vh;
+    width: 50vh;
+    /* background-color: red; */
+    /* border: 1px #282C2F solid; */
+    border-radius: 20px;
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
+    flex-direction: column;
+    /* padding: 1rem; */
+    margin: 0.2rem;
+}
+.imgCard{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 50px -9px rgba(0,0,0,0.47);
+-moz-box-shadow: 10px 10px 50px -9px rgba(0,0,0,0.47);
+box-shadow: 10px 10px 50px -9px rgba(0,0,0,0.47);
+}
+.textCard{
+    padding-left: 1rem;
 }

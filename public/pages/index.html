@@ -7,6 +7,12 @@
     <link rel="icon" href="../img/icono_web.png" type="image/png">
     <title>Tp Uner 2024</title>
     <link rel="stylesheet" type="text/css" href="../styles/index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,24 +26,97 @@
             <button tipe="submit"><img src="../img/ic_search.png" alt=""></button>
         </form>
 
-        <div class="menu-container">
+        <nav class="menu-container">
             <!-- menu -->
-            <a href="about.html" class="btn-menu">Ir a About</a>
+            <a href="about.html" class="btn-menu">About</a>
+            <a href="contacto.html" class="btn-menu">Contacto</a>
 
-            <!-- user - registro -->
-            <!-- todo: quitar el link y crear un menú desplegable con opciones -->
-            <a href="https://www.airbnb.com.ar/" target="_blank" >
-                <div class="registro-container">
+            <div class="dropdown">
+                <div class="registro-container dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="../img/ic_hamburger_menu.png" alt="">
                     <img src="../img/ic_user.png" alt="">
                 </div>
-            </a>
 
-        </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Registrate</a></li>
+                    <li><a class="dropdown-item" href="#">Iniciár sesión</a></li>
+                    <li><a class="dropdown-item" href="https://www.airbnb.com.ar/?from_belo_click">airbnb</a></li>
+                </ul>
+            </div>
+
+        </nav>
 
 
 
     </header>
+    <main>
+        <section class="container">
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$20 USD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$20 USD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$65 USD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$20 USD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$20 USD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$65 USD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$20 USD</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/hotel_roma.jpg" class="imgCard">
+                <div class="textCard">
+                    <h3 class="h3Card">Hotel California</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, voluptatum?</p>
+                    <p>$65 USD</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
