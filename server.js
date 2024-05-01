@@ -6,6 +6,7 @@ const app = express();
 // Configuración para servir archivos estáticos desde las carpetas "pages" y "styles"
 app.use(express.static(path.join(__dirname, 'public/pages')));
 app.use('/styles', express.static(path.join(__dirname, 'public/styles')));
+app.use('/img', express.static(path.join(__dirname, 'public/img')));
 
 // Manejo de errores
 app.use((err, req, res, next) => {
