@@ -7,8 +7,8 @@ body {
 
 .header-container{
     display: flex;
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; 
+    justify-content: space-between; 
     padding: 10px;
 }
 
