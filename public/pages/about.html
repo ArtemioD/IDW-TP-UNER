@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Hola soy about</h1>
+    <header class="header-container">
+        <!-- Icono -->
+        <a href="index.html"><img src="../img/icono_web.png" class="logo"></a>
+
+        <nav class="menu-container">
+            <!-- menu -->
+            <a href="about.html" class="btn-menu">About</a>
+            <a href="contacto.html" class="btn-menu">Contacto</a>
+
+            <div class="dropdown">
+                <div class="registro-container dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../img/ic_hamburger_menu.png" alt="">
+                    <img src="../img/ic_user.png" alt="">
+                </div>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Registrate</a></li>
+                    <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
+                    <li><a class="dropdown-item" href="https://www.airbnb.com.ar/?from_belo_click">airbnb</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h1>Nuestra historia</h1>
+            <p><strong>Viajes y Descubrimientos S.A.</strong> es una empresa de turismo con sede en Buenos Aires,
+                Argentina, que se dedica a ofrecer experiencias de viaje inolvidables. Fundada en 1995 por dos
+                apasionados viajeros, hemos crecido de ser una pequeña agencia local a una empresa de turismo reconocida
+                a nivel nacional.</p>
+            <p>Nuestra historia comenzó cuando nuestros fundadores, Juan Pérez y María González, decidieron compartir su
+                amor por los viajes con el mundo. Comenzaron alquilando una pequeña oficina en el centro de Buenos Aires
+                y ofreciendo tours personalizados a los destinos más populares de Argentina.</p>
+            <p>Con el tiempo, ampliamos nuestros servicios para incluir el alquiler de propiedades vacacionales. Hoy,
+                contamos con una amplia gama de propiedades en alquiler, desde acogedores apartamentos en la ciudad
+                hasta lujosas villas en la costa.</p>
+            <p>Nuestro objetivo siempre ha sido hacer que los viajes sean accesibles y agradables para todos. Creemos
+                que cada viaje es una oportunidad para descubrir, aprender y crecer. Por eso, nos esforzamos por ofrecer
+                un servicio excepcional y experiencias de viaje personalizadas que superen las expectativas de nuestros
+                clientes.</p>
+            <p>A lo largo de los años, hemos ayudado a miles de personas a explorar el mundo, y estamos orgullosos de
+                las relaciones duraderas que hemos construido con nuestros clientes. A medida que miramos hacia el
+                futuro, estamos emocionados de continuar nuestra misión de hacer que los viajes sean una experiencia
+                inolvidable para todos.</p>
+
+            <div class="imagen-about">
+                <img src="../img/about_1.jpg" alt="" srcset="">
+                <img src="../img/about_2.jpg" alt="" srcset="">
+                <img src="../img/about_3.jpg" alt="" srcset="">
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="logo">
+                <img src="../img/icono_web.png" alt="Logo de la empresa">
+            </div>
+
+            <div class="links">
+                <a href="#inicio">Inicio</a>
+                <a href="#quienes somos">About</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Nombre de tu página. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
